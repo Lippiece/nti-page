@@ -329,7 +329,7 @@ header {
     background: var(--white, #FFF);
     box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
 
-    display: flex;
+    display: none;
     flex-direction: column;
 
     &>* {

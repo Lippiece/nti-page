@@ -9,16 +9,11 @@
   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
   <link rel="stylesheet" href="src/mobile.css">
   <link rel="stylesheet" href="src/style.css">
-  <script>
-    document
-      .querySelector("form")
-      .addEventListener("submit", (event) => {
-        document.querySelector(".modal").style.display = "flex";
-      })
-  </script>
+
 </head>
 
 <body>
+
   <header>
     <div class="top">
       <div class="top-left">
@@ -937,5 +932,24 @@
     </footer>
   </main>
 </body>
+<script>
+  document
+    ?.querySelector("form")
+    ?.addEventListener("submit", (event) => {
+      document.querySelector(".form-success").style.display = "flex";
+    })
+
+  const cart = document.querySelector(".cart")
+  const modal = document.querySelector(".modal")
+
+  cart.addEventListener("mouseenter", () => {
+    modal.style.display = "flex"
+  })
+  modal.addEventListener("mouseleave", () => {
+    modal.style.display = "none"
+  })
+
+
+</script>
 
 </html>
