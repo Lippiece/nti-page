@@ -844,7 +844,6 @@ section.popular {
   header {
     display: flex;
     flex-direction: row;
-
   }
 
   @media screen and (min-width: 1920px) {
@@ -1067,6 +1066,72 @@ figure.callout {
         line-height: 140%;
         /* 1.4rem */
         background: transparent;
+      }
+
+      .form-success {
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        .contents {
+          width: 76.5rem;
+          height: 24.0625rem;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+          position: relative;
+
+          border-radius: 1.875rem;
+          background: var(--purple-light, #F3EFFF);
+
+          p {
+            z-index: 1;
+          }
+
+          p:first-child {
+            color: var(--black, #3B3C40);
+
+            font-family: Euclid Circular A;
+            font-size: 3.125rem;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          p:nth-child(2) {
+            color: var(--dark-grey, #9293B0);
+            text-align: center;
+            width: 40.1875rem;
+
+            font-family: Euclid Circular A;
+            font-size: 1.125rem;
+            font-weight: 500;
+            line-height: 130%;
+          }
+
+          .illustration {
+            z-index: 0;
+            position: absolute;
+            top: 4.61rem;
+          }
+
+          .close {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            cursor: pointer;
+          }
+        }
       }
     }
 

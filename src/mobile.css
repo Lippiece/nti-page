@@ -86,6 +86,12 @@
     }
   }
 
+  html,
+  body,
+  main {
+    overflow-x: hidden;
+  }
+
   figure.item {
     max-width: 10.8125rem;
     max-height: 16.375rem;
@@ -432,34 +438,67 @@
           line-height: 140%;
         }
 
-        input {
-          max-width: 19.6875rem;
-          max-height: 2.625rem;
-          padding: 0.69rem 1.25rem !important;
-        }
-
-        .submit {
-          flex-direction: column-reverse;
-          gap: 1.25rem;
-
-          p {
-            color: var(--dark-grey, #9293B0);
-            font-size: 0.75rem;
-            line-height: 140%;
+        form {
+          input {
+            max-width: 19.6875rem;
+            max-height: 2.625rem;
+            padding: 0.69rem 1.25rem !important;
           }
 
-          button {
-            display: flex;
-            border-radius: 0.625rem;
-            height: 2.625rem;
-            width: fit-content;
-            padding: 0.1875rem 0.1875rem 0.1875rem 1.25rem;
-            align-items: center;
+          .submit {
+            flex-direction: column-reverse;
             gap: 1.25rem;
 
-            span {
-              width: 2.25rem;
-              height: 2.25rem;
+            p {
+              color: var(--dark-grey, #9293B0);
+              font-size: 0.75rem;
+              line-height: 140%;
+            }
+
+            button {
+              display: flex;
+              border-radius: 0.625rem;
+              height: 2.625rem;
+              width: fit-content;
+              padding: 0.1875rem 0.1875rem 0.1875rem 1.25rem;
+              align-items: center;
+              gap: 1.25rem;
+
+              span {
+                width: 2.25rem;
+                height: 2.25rem;
+              }
+            }
+          }
+
+          .form-success {
+            width: 375px;
+
+            .contents {
+              width: 22.1875rem;
+              height: 15.5rem;
+              border-radius: 0.91844rem;
+              gap: 1.5rem;
+
+              p:first-child {
+                text-align: center;
+                font-size: 1.625rem;
+                width: 20.9375rem;
+              }
+
+              p:nth-child(2) {
+                width: 20.9375rem;
+                font-size: 0.9375rem;
+              }
+
+              .illustration {
+                top: 3.75rem;
+
+                svg {
+                  width: 19.125rem;
+                  height: 8rem;
+                }
+              }
             }
           }
         }
