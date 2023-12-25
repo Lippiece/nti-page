@@ -585,7 +585,7 @@ main {
     top: 7.19rem;
     left: 3.12rem;
 
-    .white-spaceper {
+    .text-wrapper {
       top: 9px;
       left: 183px;
       font-size: 65px;
@@ -609,7 +609,7 @@ main {
       line-height: normal;
     }
 
-    .white-spaceper-2 {
+    .text-wrapper-2 {
       position: absolute;
       top: 0;
       left: 62px;
