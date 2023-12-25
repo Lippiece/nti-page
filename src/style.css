@@ -97,6 +97,10 @@ body>header {
     }
   }
 
+  .burger {
+    display: none;
+  }
+
   & .search {
     margin-left: 20px;
     flex-grow: 1;

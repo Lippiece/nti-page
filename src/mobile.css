@@ -1,4 +1,54 @@
 @media screen and (max-width: 375px) {
+  .navbar {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+
+    .contents {
+      overflow: hidden;
+      height: 93.5%;
+      padding: 1.88rem 0.62rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.56rem;
+      width: 0;
+      background: white;
+      border-radius: 0rem 1.25rem 1.25rem 0rem;
+      transition: width 0.2s;
+
+      hr {
+        margin: 0;
+        border-color: #DFDFF055;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.94rem;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 0.625rem;
+          color: var(--black, #3B3C40);
+          font-family: Euclid Circular A;
+          font-size: 0.875rem;
+          font-weight: 500;
+          line-height: 130%;
+        }
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 0.56rem;
+      right: 0.62rem;
+    }
+  }
+
   header {
     position: relative;
     display: inline-flex;
@@ -36,6 +86,8 @@
 
     div.middle {
       padding: 0;
+      gap: 0.5rem;
+      width: 97%;
 
       &>a {
         position: absolute;
@@ -52,14 +104,34 @@
         display: none;
       }
 
+      .burger {
+        display: flex;
+        width: 2.625rem;
+        height: 2.625rem;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 0.625rem;
+        background: var(--pink, #E50E78);
+
+        box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+
+        svg {
+          width: 1.5rem;
+          height: 1.5rem;
+          padding: 0.28125rem 0.125rem;
+        }
+      }
+
       .search {
         display: flex;
-        width: 19.0625rem;
+        /* width: 100%; */
         height: 2.625rem;
         padding: 0.1875rem 0.1875rem 0.1875rem 1.25rem;
         justify-content: space-between;
         align-items: center;
         border-radius: 0.625rem;
+        margin-left: 0;
 
         .icon-container {
           width: 2.25rem;
@@ -330,12 +402,19 @@
         }
 
         figcaption {
+          padding-top: 1.55rem;
+
           p:first-child {
             color: var(--black, #3B3C40);
             font-size: 1.125rem;
             font-weight: 600;
             line-height: normal;
             text-wrap: balance;
+          }
+
+          p:nth-child(2) {
+            font-size: 0.75rem;
+            width: 14.1875rem;
           }
         }
       }
