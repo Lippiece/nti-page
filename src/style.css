@@ -647,7 +647,7 @@ main {
 
   img {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     width: 14.5625rem;
     height: 17rem;
     bottom: 5rem;
