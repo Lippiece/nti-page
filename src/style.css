@@ -248,22 +248,15 @@ button {
   left: 2.5rem;
 }
 
-figure.item {
-  figcaption {
-    p:nth-child(2) {
-      overflow: hidden;
-      color: var(--dark-grey, #9293B0);
-      text-overflow: ellipsis;
+figure.item figcaption p:nth-child(2) {
+  overflow: hidden;
+  color: var(--dark-grey, #9293B0);
+  text-overflow: ellipsis;
 
-      /* text 16 medium */
-      font-family: Euclid Circular A;
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 140%;
-      /* 1.4rem */
-    }
-  }
+  font-family: Euclid Circular A;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 140%;
 }
 
 header {
@@ -1011,7 +1004,7 @@ figure.callout {
   position: relative;
   overflow: hidden;
 
-  & #callout-image {
+  #callout-image {
     width: 49.875rem;
     height: 31.0625rem;
     border-radius: 2.5rem;
@@ -1022,7 +1015,7 @@ figure.callout {
       position: absolute;
       width: 49.875rem;
       height: 31.0625rem;
-      background: url("src/assets/brushes.jpeg"), lightgray 50% / cover no-repeat;
+      background: url("/src/assets/brushes.jpeg"), lightgray 50% / cover no-repeat;
       left: -100px;
       border-radius: 2.5rem;
     }
