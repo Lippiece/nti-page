@@ -553,11 +553,134 @@ main {
   gap: 5rem;
 }
 
-.top-sellers>.banner {
-  border-radius: 1.875rem;
-  background: #AFA2FB;
-  width: 43.125rem;
-  height: 26.375rem;
+@media screen and (max-width: 1920px) {
+
+  .top-sellers>.banner {
+    border-radius: 1.875rem;
+    background: #AFA2FB;
+    width: 43.125rem;
+    height: 26.375rem;
+    position: relative;
+    overflow: hidden;
+
+    .group {
+      position: absolute;
+      width: 253px;
+      height: 127px;
+      top: 7.19rem;
+      left: 3.12rem;
+
+      .text-wrapper {
+        top: 9px;
+        left: 183px;
+        font-size: 65px;
+        position: absolute;
+        font-family: "Euclid Circular A-Bold", Helvetica;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .pre {
+        top: 28px;
+        left: 0;
+        font-size: 30px;
+        position: absolute;
+        font-family: "Euclid Circular A-Bold", Helvetica;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .text-wrapper-2 {
+        position: absolute;
+        top: 0;
+        left: 62px;
+        font-family: "Euclid Circular A-Bold", Helvetica;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 100px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .minus {
+        position: absolute;
+        width: 45px;
+        height: 10px;
+        top: 74px;
+        left: 0;
+        background-color: #ffffff;
+      }
+    }
+
+    .background-text#mobile {
+      display: none;
+    }
+
+    .background-text#desktop {
+      position: absolute;
+      left: 13.25rem;
+      top: 2.69rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 2.09rem;
+    }
+
+    img {
+      position: absolute;
+      z-index: 2;
+      width: 14.5625rem;
+      height: 17rem;
+      bottom: 5rem;
+      right: 2.94rem;
+    }
+
+    .ellipse {
+      z-index: 0;
+      width: 26.75rem;
+      height: 25.25rem;
+
+      position: absolute;
+      bottom: 1rem;
+      right: -3.56rem;
+
+      border-radius: 26.75rem;
+      background: #F99CDA;
+      filter: blur(72px);
+    }
+
+    p {
+      position: absolute;
+      left: 3.12rem;
+      bottom: 7.19rem;
+      width: 18.875rem;
+
+      color: var(--white, #FFF);
+      font-family: Euclid Circular A;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    a {
+      position: absolute;
+      overflow: visible;
+      right: 0.5rem;
+      bottom: 0.5rem;
+      width: 3.75rem;
+      height: 3.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: var(--black, #3B3C40);
+      border-radius: 50%;
+    }
+  }
 }
 
 .item {
