@@ -123,6 +123,10 @@
         line-height: 130%;
       }
 
+      p:nth-child(2) {
+        font-size: 0.75rem !important;
+      }
+
       .price {
         display: flex;
         flex-direction: column;

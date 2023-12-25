@@ -203,8 +203,6 @@ span.ellipse {
   background: linear-gradient(171deg, rgba(255, 255, 255, 0.58) 4.95%, rgba(255, 255, 255, 0.00) 95.57%);
 }
 
-
-
 button {
   display: flex;
   height: 3.75rem;
@@ -248,6 +246,24 @@ button {
   position: absolute;
   top: 2.5rem;
   left: 2.5rem;
+}
+
+figure.item {
+  figcaption {
+    p:nth-child(2) {
+      overflow: hidden;
+      color: var(--dark-grey, #9293B0);
+      text-overflow: ellipsis;
+
+      /* text 16 medium */
+      font-family: Euclid Circular A;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+      /* 1.4rem */
+    }
+  }
 }
 
 header {
@@ -971,10 +987,18 @@ section header {
   }
 }
 
-.discounts-figures {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.25rem;
+section.discounts {
+  header {
+    p {
+      content: "Хиты продаж";
+    }
+  }
+
+  .discounts-figures {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
 }
 
 figure.callout {
