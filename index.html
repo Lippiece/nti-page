@@ -264,7 +264,7 @@
     </div>
 
     <div class="bottom">
-      <div class="bottom-links slider">
+      <div class="bottom-links">
         <a href="">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path
@@ -483,7 +483,7 @@
     <section class="popular carousel">
       <header>
         <p>Популярные категории</p>
-        <button>
+        <button id="desktop">
           Все категории
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -507,7 +507,7 @@
           </span>
         </button>
       </header>
-      <div class="scrollable slider">
+      <div class="scrollable">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path
@@ -594,6 +594,35 @@
           </figcaption>
         </figure>
       </div>
+
+      <div class="slider">
+        <span style="color: #822FAF;">•</span>
+        <span>•</span>
+        <span>•</span>
+        <span>•</span>
+      </div>
+
+      <button id="mobile">
+        Все категории
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+            <path d="M12.7749 4.94165L17.8332 9.99998L12.7749 15.0583" stroke="url(#paint0_linear_2129_248)"
+              stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3.66675 10H17.6917" stroke="url(#paint1_linear_2129_248)" stroke-width="1.5"
+              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <defs>
+              <linearGradient id="paint0_linear_2129_248" x1="12.7749" y1="4.94165" x2="18.4169" y2="5.23196"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#DD3197" />
+                <stop offset="1" stop-color="#822FAF" />
+              </linearGradient>
+              <linearGradient id="paint1_linear_2129_248" x1="3.66675" y1="10" x2="8.75394" y2="17.3425"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#DD3197" />
+                <stop offset="1" stop-color="#822FAF" />
+              </linearGradient>
+            </defs>
+          </svg></span>
+      </button>
     </section>
 
     <section class="discounts">
@@ -601,26 +630,24 @@
         <p>Скидки</p>
         <button>
           Все скидки
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-              <path d="M14.4302 6.42993L20.5002 12.4999L14.4302 18.5699" stroke="url(#paint0_linear_2031_1116)"
-                stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M3.5 12.5H20.33" stroke="url(#paint1_linear_2031_1116)" stroke-width="2" stroke-miterlimit="10"
-                stroke-linecap="round" stroke-linejoin="round" />
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path d="M12.7749 4.94165L17.8332 9.99998L12.7749 15.0583" stroke="url(#paint0_linear_2129_248)"
+                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3.66675 10H17.6917" stroke="url(#paint1_linear_2129_248)" stroke-width="1.5"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
               <defs>
-                <linearGradient id="paint0_linear_2031_1116" x1="14.4302" y1="6.42993" x2="21.2006" y2="6.77831"
+                <linearGradient id="paint0_linear_2129_248" x1="12.7749" y1="4.94165" x2="18.4169" y2="5.23196"
                   gradientUnits="userSpaceOnUse">
                   <stop stop-color="#DD3197" />
                   <stop offset="1" stop-color="#822FAF" />
                 </linearGradient>
-                <linearGradient id="paint1_linear_2031_1116" x1="3.5" y1="12.5" x2="8.20568" y2="20.6502"
+                <linearGradient id="paint1_linear_2129_248" x1="3.66675" y1="10" x2="8.75394" y2="17.3425"
                   gradientUnits="userSpaceOnUse">
                   <stop stop-color="#DD3197" />
                   <stop offset="1" stop-color="#822FAF" />
                 </linearGradient>
               </defs>
-            </svg>
-          </span>
+            </svg></span>
         </button>
       </header>
       <div class="discounts-figures">
@@ -713,7 +740,6 @@
 
     <figure class="callout">
       <div id="callout-image"></div>
-      <!-- <img src="src/assets/brushes.jpeg" alt="Painting brush and bins"> -->
 
       <figcaption>
         <p>Нужна консультация?</p>
