@@ -858,6 +858,10 @@ section.popular {
 
 section.discounts {
   gap: 3.75rem;
+
+  button#mobile {
+    display: none;
+  }
 }
 
 section header {
@@ -981,12 +985,6 @@ section header {
 }
 
 section.discounts {
-  header {
-    p {
-      content: "Хиты продаж";
-    }
-  }
-
   .discounts-figures {
     display: flex;
     align-items: flex-start;
@@ -1205,6 +1203,8 @@ main>footer {
       width: 100%;
       height: 0.0625rem;
       margin: 0;
+      border: 0.0625rem solid #DFDFF0;
+      border-bottom: none;
     }
 
     p {

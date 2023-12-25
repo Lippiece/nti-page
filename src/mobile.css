@@ -466,6 +466,35 @@
       }
     }
 
+    section.discounts {
+      gap: 1.88rem;
+      align-items: center;
+
+      header {
+        align-self: flex-start;
+
+        p {
+          font-size: 2rem;
+        }
+      }
+
+      button#desktop {
+        display: none;
+      }
+
+      button#mobile {
+        display: flex;
+        width: fit-content;
+      }
+
+      .discounts-figures {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem 0.5625rem;
+      }
+    }
+
     footer {
       position: relative;
       padding: 1.25rem !important;
