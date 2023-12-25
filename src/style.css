@@ -173,7 +173,7 @@ body>header {
       font-style: normal;
       font-weight: 500;
       line-height: 140%;
-      text-wrap: nowrap;
+      white-space: nowrap;
     }
   }
 
@@ -451,7 +451,7 @@ header {
                 font-size: 1.25rem;
                 font-weight: 500;
                 line-height: 120%;
-                text-wrap: nowrap;
+                white-space: nowrap;
               }
 
               s {
@@ -585,7 +585,7 @@ main {
     top: 7.19rem;
     left: 3.12rem;
 
-    .text-wrapper {
+    .white-spaceper {
       top: 9px;
       left: 183px;
       font-size: 65px;
@@ -609,7 +609,7 @@ main {
       line-height: normal;
     }
 
-    .text-wrapper-2 {
+    .white-spaceper-2 {
       position: absolute;
       top: 0;
       left: 62px;
@@ -810,7 +810,7 @@ section.benefits {
   line-height: 120%;
   width: 20.3125rem;
   height: 3.1875rem;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .item figcaption>p:last-child {
@@ -854,7 +854,7 @@ section.popular {
     flex-direction: row;
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 376px) {
 
     button#mobile,
     .slider {
@@ -892,7 +892,7 @@ section header {
   margin: 3.75rem 0 1.87rem;
   overflow: hidden;
   position: relative;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 1920px) {
@@ -1187,8 +1187,7 @@ main>footer {
     font-size: 1rem;
     font-weight: 500;
     line-height: 140%;
-    /* 1.4rem */
-    text-wrap: balance;
+    white-space: balance;
   }
 
   .about {
@@ -1197,12 +1196,11 @@ main>footer {
 
   div>p {
     margin-bottom: 0.94rem;
-    text-wrap: nowrap;
+    white-space: nowrap;
     color: var(--black, #3B3C40);
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 120%;
-    /* 1.5rem */
     height: 1.5rem;
   }
 
@@ -1228,7 +1226,7 @@ main>footer {
       font-weight: 500;
       line-height: 140%;
       /* 1.4rem */
-      text-wrap: nowrap;
+      white-space: nowrap;
     }
 
     &>svg {
