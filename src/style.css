@@ -551,18 +551,35 @@ section {
   flex-direction: column;
 }
 
-
 section.top-sellers {
-  border-radius: 3.125rem;
-  background: var(--purple-light, #F3EFFF);
-  flex-direction: row;
   width: 97.5rem;
   height: 31.375rem;
-  flex-shrink: 0;
+  margin-top: 5.75rem;
+
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
-  margin-top: 5.75rem;
+
+  border-radius: 3.125rem;
+  background: var(--purple-light, #F3EFFF);
+
+  swiper-container {
+    width: 48.125rem;
+    margin: 0;
+
+    &::part(button-next),
+    &::part(button-prev) {
+      width: 1.2rem;
+      height: 1.2rem;
+      padding: 0.5rem;
+      color: #822FAF;
+      background-color: var(--white, #FFF);
+      border-radius: 50%;
+      box-shadow: 3px 6px 14px rgba(115, 103, 151, 0.15);
+
+    }
+  }
 }
 
 main {

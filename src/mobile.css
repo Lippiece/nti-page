@@ -235,7 +235,6 @@
     padding: 0 !important;
 
     section.top-sellers {
-      display: grid;
       width: 23.4375rem;
       height: 38.5625rem;
       flex-direction: column;
@@ -361,6 +360,23 @@
 
           background: var(--black, #3B3C40);
           border-radius: 50%;
+        }
+      }
+
+      swiper-container {
+        width: inherit;
+        margin: 0;
+
+        &::part(button-next),
+        &::part(button-prev) {
+          width: 1.2rem;
+          height: 1.2rem;
+          padding: 0.5rem;
+          color: #822FAF;
+          background-color: var(--white, #FFF);
+          border-radius: 50%;
+          box-shadow: 3px 6px 14px rgba(115, 103, 151, 0.15);
+
         }
       }
 

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
   <link rel="stylesheet" href="src/mobile.css">
   <link rel="stylesheet" href="src/style.css">
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </head>
 
 <body>
@@ -104,12 +104,10 @@
     </div>
 
     <div class="close">
-
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path d="M17.7149 17.7147L6.28638 6.28613M17.7149 6.28613L6.28638 17.7147" stroke="white" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round" />
       </svg>
-
     </div>
   </div>
 
@@ -518,36 +516,76 @@
           </svg></a>
       </div>
 
-      <figure class="item">
-        <div class="image">
-          <img src="src/assets/blue paint.png" alt="A blue paint bin">
-          <p>-25%</p>
-        </div>
+      <swiper-container slides-per-view="2" navigation="true">
+        <swiper-slide>
+          <figure class="item">
+            <div class="image">
+              <img src="src/assets/blue paint.png" alt="A blue paint bin">
+              <p>-25%</p>
+            </div>
 
-        <figcaption>
-          <p>Benjamin Moore Regal Select 549 Waterborne Interior Paint Eggshell </p>
-          <p>0.95 л • 2 л</p>
-          <div class="price">
-            <span>от 3600 ₽</span>
-            <s>4500 ₽</s>
-          </div>
-        </figcaption>
-      </figure>
-      <figure class="item">
-        <div class="image">
-          <img src="src/assets/violet paint.png" alt="A blue paint bin">
-          <p>-25%</p>
-        </div>
+            <figcaption>
+              <p>Benjamin Moore Regal Select 549 Waterborne Interior Paint Eggshell </p>
+              <p>0.95 л • 2 л</p>
+              <div class="price">
+                <span>от 3600 ₽</span>
+                <s>4500 ₽</s>
+              </div>
+            </figcaption>
+          </figure>
+        </swiper-slide>
+        <swiper-slide>
+          <figure class="item">
+            <div class="image">
+              <img src="src/assets/violet paint.png" alt="A blue paint bin">
+              <p>-25%</p>
+            </div>
 
-        <figcaption>
-          <p>Benjamin Moore Aura 532 Bath & Spa Waterborne Interior Paint Matte Finish</p>
-          <p>0.95 л • 2 л</p>
-          <div class="price">
-            <span>5200 ₽</span>
-            <s>5720 ₽</s>
-          </div>
-        </figcaption>
-      </figure>
+            <figcaption>
+              <p>Benjamin Moore Aura 532 Bath & Spa Waterborne Interior Paint Matte Finish</p>
+              <p>0.95 л • 2 л</p>
+              <div class="price">
+                <span>5200 ₽</span>
+                <s>5720 ₽</s>
+              </div>
+            </figcaption>
+          </figure>
+        </swiper-slide>
+        <swiper-slide>
+          <figure class="item">
+            <div class="image">
+              <img src="src/assets/blue paint.png" alt="A blue paint bin">
+              <p>-25%</p>
+            </div>
+
+            <figcaption>
+              <p>Benjamin Moore Regal Select 549 Waterborne Interior Paint Eggshell </p>
+              <p>0.95 л • 2 л</p>
+              <div class="price">
+                <span>от 3600 ₽</span>
+                <s>4500 ₽</s>
+              </div>
+            </figcaption>
+          </figure>
+        </swiper-slide>
+        <swiper-slide>
+          <figure class="item">
+            <div class="image">
+              <img src="src/assets/blue paint.png" alt="A blue paint bin">
+              <p>-25%</p>
+            </div>
+
+            <figcaption>
+              <p>Benjamin Moore Regal Select 549 Waterborne Interior Paint Eggshell </p>
+              <p>0.95 л • 2 л</p>
+              <div class="price">
+                <span>от 3600 ₽</span>
+                <s>4500 ₽</s>
+              </div>
+            </figcaption>
+          </figure>
+        </swiper-slide>
+      </swiper-container>
     </section>
 
     <section class="benefits a">
